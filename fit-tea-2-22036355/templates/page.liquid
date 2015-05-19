@@ -1,0 +1,67 @@
+<div id="page" class="row {{ page.handle }}">
+  
+  <div class="span12 details">
+  	{% if page.handle != 'testimonials' %}
+    <h1 class="p25 page-title">{{ page.title }}</h1>
+    {% else %}
+    <h1 class="p25 page-title-top-padding">{{ page.title }}</h1>
+    {% endif %}
+
+    {% if page.handle == 'win' %}
+      {% form 'customer' %}
+      <input type="hidden" id="contact_tags" name="contact[tags]" value="prospect,newsletter"/>
+      <table class="contest-form">
+        <tr class="contest-form-prompt-row">
+          <td colspan="2"><h2>Enter your email for a chance to win FREE Fit Tea:</h2></td>
+        </tr>
+        <tr class="contest-form-inputs-row">
+          <td class="contest-form-inputs-cell contest-form-inputs-cell-email">
+            <input type="text" id="contact_email" name="contact[email]"/>
+          </td>
+          <td class="contest-form-inputs-cell contest-form-inputs-cell-submit">
+            <input type='submit' class="submit button" value="Submit"></input>
+          </td>
+        </tr>
+      </table>
+      {% endform %}
+    {% endif %}
+
+    {{ page.content }}
+
+    {% if page.handle == 'directions' %}
+	    {% include 'block-ebook-download' %}
+	  {% endif %}
+
+    {% if page.handle == 'testimonials' or page.handle == 'ingredients' %}
+      {% include 'block-buy-now' %}
+    {% endif %}
+
+    {% if page.handle == 'win' %}
+      {% include 'block-instagram-slideshow' %}
+    {% endif %}
+
+    {% if page.handle == 'thank-you' or page.handle == 'coupons' %}
+      {% form 'customer' %}
+      <input type="hidden" id="contact_tags" name="contact[tags]" value="prospect,newsletter"/>
+      <table class="contest-form">
+        <tr class="contest-form-prompt-row">
+          <td colspan="2"><h2>Enter your email for a chance to win FREE Fit Tea:</h2></td>
+        </tr>
+        <tr class="contest-form-inputs-row">
+          <td class="contest-form-inputs-cell contest-form-inputs-cell-email">
+            <input type="text" id="contact_email" name="contact[email]"/>
+          </td>
+          <td class="contest-form-inputs-cell contest-form-inputs-cell-submit">
+            <input type='submit' class="submit button" value="Submit"></input>
+          </td>
+        </tr>
+      </table>
+      {% endform %}
+    {% endif %}
+
+    {% if page.handle == 'coupons' %}
+      {% include 'block-instagram-slideshow' %}
+    {% endif %}
+  </div>
+  
+</div>

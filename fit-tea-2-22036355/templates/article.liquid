@@ -1,0 +1,29 @@
+<div id="article" class="row">
+
+  <div class="span9 article">
+
+    <!-- Begin article -->
+    <div class="article-body clearfix">
+      <h1 class="p25 page-title">{{ article.title }}</h1>
+      <span class="date" style="display: block;">Posted on: {{ article.published_at | date: "%B %d %Y" }}</span>
+
+      <div id="article-content">
+        {{ article.content }}
+      </div>
+
+      <div class="span12 video-review-buttons-container">
+      {% if blog.previous_article %}
+        <a class="video-review-button video-review-button-previous" href="{{ blog.previous_article }}">Previous Video Review</a>
+      {% endif %}
+      {% if blog.next_article %}
+        <a class="video-review-button video-review-button-next" href="{{ blog.next_article }}">Next Video Review</a>
+      {% endif %}
+      </div>
+
+      {% include 'block-buy-now' %}
+    </div>
+    <!-- End article -->
+
+  </div>
+
+</div>

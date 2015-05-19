@@ -1,0 +1,254 @@
+<!-- start content page -->
+{% assign helper_welcome = false %}
+
+
+{% if pages[settings.homepage].content contains 'where users go when first trying to determine a level of trust' %}
+  {% assign helper_welcome = true %}
+{% endif %}
+
+{% if pages[settings.homepage].content contains 'Write a few sentences to tell people about your store' %}
+  {% assign helper_welcome = true %}
+{% endif %}
+
+
+
+<script type="text/javascript">var tracker_settings = { pixel_beacon: 1 };</script> <script type="text/javascript" src="http://files.markerly.com/tracker.min.js#tracker_id=fittea0231"></script>
+
+<!-- Google Code for Remarketing Tag -->
+<!--------------------------------------------------
+Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+--------------------------------------------------->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1026829270;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1026829270/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+
+
+
+<div class="span12 clearfix {% if helper_welcome %}helper-section{% endif %}">
+  {% if helper_welcome %}
+  <div class="note helper-note">
+    <h3>How to change this page</h3>
+    <p>You can change this area's text by editing the "Frontpage" page in your admin's <a href="/admin/pages">Pages section</a>.</p>
+    <p class="p0">You can also replace the "Frontpage" page with another page in your <a href="/admin/themes/current/settings">Theme Settings</a>.</p>
+  </div>
+  {% endif %}
+  <div class="p30 clearfix  {% if helper_welcome %}helper-content{% endif %}">
+    <div class="intro home clearfix">
+      {{ pages[settings.homepage].content }}
+
+      <div class="clearfix">
+        <div class="span6 home-detox-box">
+            <a class="buy-now-link" href="/cart/788499675:1">
+              <img src="{{ 'home-product-14-day-detox.jpg' | asset_url }}" alt="Fit Tea 14 Day Detox">
+            </a>
+        </div>
+
+        <div class="span6 home-detox-box">
+            <a class="buy-now-link" href="/cart/788502143:1">
+              <img src="{{ 'home-product-28-day-detox.jpg' | asset_url }}" alt="Fit Tea 28 Day Detox">
+            </a>
+        </div>
+      </div>
+
+      <div class="span12 home-product-block">
+
+        <div class="span4">
+          <div class="home-product-block-image-container">
+            <img src="//cdn.shopify.com/s/files/1/0617/7681/products/FitTea_Super_Pack_-_Black_Text_grande.png?v=1417414617" alt="Bag of Fit Tea, 2 pill bottles, and a bottle of raspberry ketone drops"/>
+          </div>
+          <a class="button buy-now-link" href="/cart/788547847:1">Buy Super Pack</a>
+        </div>
+
+        <div class="span8">
+          <h2>Fit Tea Super Pack</h2>
+          <p><strong>Includes:</strong></p>
+          <ul>
+            <li>Fit Tea Fat burner!</li>
+            <li>Garcinia Cambogia!</li>
+            <li>28 Day Detox package!</li>
+            <li>Free Forskolin!</li>
+          </ul>
+          <p><strong>Powerful weight-loss supplements and Detox Tea</strong></p>
+          <ul>
+            <li>Increase your energy levels</li>
+            <li>Powerful weight-loss supplement</li>
+            <li>Removes toxins from body which hinder body from burning fat</li>
+            <li>Suppresses appetite</li>
+            <li>Provides additional energy without the jitters</li>
+            <li>Natural antioxidants</li>
+          </ul>
+        </div>
+
+      </div>
+
+      {% include 'block-as-seen-on' %}
+
+      <div class="span12 home-product-block">
+
+        <div class="span4">
+          <div class="home-product-block-image-container">
+            <img src="//cdn.shopify.com/s/files/1/0617/7681/products/new-pro-pack_grande.png?v=1409771424" alt="Bag of Fit Tea and 1 pill bottle">
+          </div>
+          <a class="button buy-now-link" href="/cart/788551583:1">Buy Pro Pack</a>
+        </div>
+
+        <div class="span8">
+          <h2>Fit Tea Pro Pack</h2>
+          <p><strong>Includes:</strong></p>
+          <ul>
+            <li>Fit Tea Fat burner pills</li>
+            <li>28 Day Detox package</li>
+          </ul>
+          <p><strong>Powerful weight-loss supplements and Detox Tea</strong></p>
+          <ul>
+            <li>Increase your energy levels</li>
+            <li>Powerful weight-loss supplement</li>
+            <li>Removes toxins from body which hinder body from burning fat</li>
+            <li>Suppresses appetite</li>
+            <li>Provides additional energy without the jitters</li>
+            <li>100% natural</li>
+            <li>Natural antioxidants</li>
+          </ul>
+        </div>
+
+      </div>
+
+      {% include 'block-instagram-embed-video-testimonial' %}
+
+      <div class="span12 home-product-block">
+
+        <div class="span4">
+          <div class="home-product-block-image-container">
+            <img src="{{ 'garcinia-cambogia.png' | asset_url }}" alt="Pill Bottle">
+          </div>
+          <a class="button buy-now-link" href="/cart/788532071:1">Buy Here $40</a>
+        </div>
+
+        <div class="span8">
+          <h2>Garcinia Cambogia</h2>
+          <p><strong>Clinical studies have found Garcinia to:</strong></p>
+          <ul>
+            <li>Suppress appetite</li>
+            <li>Control cravings</li>
+            <li>Burn fat and block fat production</li>
+            <li>Improve sleep and mood</li>
+            <li>Decrease bad cholesterol</li>
+            <li>Increase weight loss by up to 3 times more than diet and exercise alone</li>
+            <li>Reduce cortisol levels (belly fat)</li>
+          </ul>
+
+          <p><strong>HCA LEVELS</strong>: 60% HCA, which is the most effective and safe amount of HCA that will deliver you maximum results.</p>
+          <p><strong>Be safe and effective with no side effects</strong></p>
+        </div>
+
+      </div>
+
+      <div class="youtube-embed-container">
+        <iframe class="youtube-embed" width="600" height="338" src="//www.youtube.com/embed/aL5qGPdLJ10?autoplay=0&amp;controls=0&amp;showinfo=0&amp;modestbranding=1" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="span12 home-product-block">
+
+        <div class="span4">
+          <div class="home-product-block-image-container">
+            <img src="{{ 'fatburner.png' | asset_url }}" alt="Pill Bottle">
+          </div>
+          <a class="button buy-now-link" href="/cart/788581083:1">Buy Here $35</a>
+        </div>
+
+        <div class="span8">
+          <h2>Fit Tea Fatburner Pill</h2>
+          <p><strong>Powerful weight-loss supplement:</strong></p>
+          <ul>
+            <li>Increase your energy levels</li>
+            <li>Powerful weight-loss supplement</li>
+            <li>Removes toxins from body which hinder body from burning fat</li>
+            <li>Suppresses appetite</li>
+            <li>Provides additional energy without the jitters</li>
+            <li>100% natural</li>
+            <li>Natural antioxidants</li>
+          </ul>
+        </div>
+
+      </div>
+
+      {% if settings.slide_1 != false or settings.slide_2 != false or settings.slide_3 != false or settings.slide_4 != false %}
+      <!-- Begin slider -->
+      <div class="span12 home-slider">
+        <div class="flexslider-container">
+          <div class="flexslider">
+            <ul class="slides">
+              {% for i in (1..6) %}
+                {% capture show_slide %}slide_{{ i }}{% endcapture %}
+                {% capture image %}slideshow_{{ i }}.jpg{% endcapture %}
+                {% capture link %}slide_{{ i }}_link{% endcapture %}
+                {% capture alt %}slide_{{ i }}_alt{% endcapture %}
+                {% if settings[show_slide] %}
+                <li>
+                  <a href="{{ settings[link] }}">
+                    <img src="{{ image | asset_url }}" alt="{{ settings[alt] | escape }}" />
+                  </a>
+                </li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+            <div class="flex-controls"></div>
+          </div>
+        </div>
+      </div>
+      <!-- End slider -->
+      {% endif %}
+
+      <div class="span12 home-product-block home-product-block-last">
+
+        <div class="span4">
+          <div class="home-product-block-image-container">
+            <img src="//cdn.shopify.com/s/files/1/0617/7681/products/FitTea_Starter_Pack_grande.png?v=1417414398" alt="Pill Bottle, Bag of tea, and bottle with eye dropper">
+          </div>
+          <a class="button buy-now-link" href="/cart/795448291:1">Buy Here Starter Pack</a>
+        </div>
+
+        <div class="span8">
+          <h2>Fit Tea Starter Pack</h2>
+          <p><strong>Includes:</strong></p>
+          <ul>
+            <li>Garcinia Cambogia</li>
+            <li>14 Day Detox package</li>
+            <li>Fat Burner</li>
+          </ul>
+          <p><strong>Powerful weight-loss supplements and Detox Tea</strong></p>
+          <ul>
+            <li>Increase your energy levels</li>
+            <li>Powerful weight-loss supplement</li>
+            <li>Removes toxins from body which hinder body from burning fat</li>
+            <li>Suppresses appetite</li>
+            <li>Provides additional energy without the jitters</li>
+            <li>100% natural</li>
+            <li>Natural antioxidants</li>
+          </ul>
+        </div>
+
+      </div>
+
+      {% include 'block-tea-product-description' %}
+      {% include 'block-sales-1' %}
+      {% include 'block-sales-2' %}
+      {% include 'block-ingredients' %}
+      {% include 'block-buy-now' %}
+
+    </div>
+  </div>
+</div>
+<!-- end content page -->

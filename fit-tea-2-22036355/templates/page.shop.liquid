@@ -1,0 +1,35 @@
+<div id="page" class="row shop-page">
+  
+  <div class="span12 details">
+    <h1 class="p25 page-title">{{ page.title }}</h1>
+    
+      {% for link in linklists.shop-page-products.links %}
+    	{% capture modulo %}{{ forloop.index | modulo: 2 }}{% endcapture %}
+
+    	{% if modulo == "1" %}
+    	<div class="row">
+    	{% endif %}
+        <div class="product span6">
+          <h2 class="title">{{ link.object.title }}</h2>
+
+          <div class="image">
+            <a class="product-link" href="{{ link.object.url }}">
+              <img src="{{ link.object.featured_image | product_img_url: 'large' }}" alt="{{ link.object.title | escape  }}" />
+            </a>
+          </div>
+
+          <div class="span12 buy-now-link-container">
+            <a class="button buy-now-link" data-pid="{{ link.object.id }}" href="{{ link.object.url }}">Buy Now! {{ link.object.price | money }}</a>
+          </div>
+
+        </div>
+    	{% if modulo == "0" or forloop.last %}
+  		</div>
+    	{% endif %}
+      {% endfor %}
+
+      {% include 'block-instagram-slideshow' %}
+
+  </div>
+  
+</div>

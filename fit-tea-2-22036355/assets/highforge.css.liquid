@@ -1,0 +1,738 @@
+/****************************************************
+* highforge.css.liquid
+* 
+* Customizations to basic Shopify theme by Highforge
+* for Fit Tea
+****************************************************/
+
+/****************************************************
+* FULL SITE STYLES & TYPOGRAPHY
+****************************************************/
+	*,
+	*:before,
+	*:after
+	{
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	a
+	{
+		opacity: 1;
+		-webkit-transition: all 0.25s linear;
+		-moz-transition: all 0.25s linear;
+		-o-transition: all 0.25s linear;
+		transition: all 0.25s linear;
+	}
+
+	a:hover,
+	a:focus
+	{
+		opacity: 1;
+		text-decoration: none;
+		color: #000;
+	}
+
+	h2
+	{
+		margin: 0;
+		padding-bottom: 10px;
+		font-size: 22px;
+		line-height: 1;
+		font-weight: 700;
+	}
+
+	h3
+	{
+		margin: 0;
+		padding-bottom: 10px;
+		font-size: 20px;
+		line-height: 1;
+		font-weight: 700;
+	}
+
+	blockquote
+	{
+		margin: 0 0 20px;
+		padding: 20px;
+		text-align: center;
+		font-size: 20px;
+		color: #FFF;
+		background: #599442;
+	}
+
+	blockquote:before,
+	blockquote:after
+	{
+		display: block;
+		font-family: FontAwesome;
+		font-size: 16px;
+	}
+
+	blockquote:before
+	{
+		content: '\f10d';
+		text-align: left;
+	}
+
+	blockquote:after
+	{
+		content: '\f10e';
+		text-align: right;
+	}
+
+	.span12
+	{
+		width: 98%;
+		margin: 0 1%;
+	}
+
+	.span8
+	{
+		width: 60%;
+		margin: 0 3%;
+	}
+
+	.span6
+	{
+		width: 46%;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+
+	.span4
+	{
+		width: 30%;
+		margin: 0 1.5%;
+	}
+
+	.sidebar-content-wrapper
+	{
+		margin-top: 36px;
+	}
+
+	.sidebar-menu-wrapper
+	{
+		float: left;
+		width: 20%;
+		padding: 10px 0;
+	}
+
+	.main-content-wrapper
+	{
+		float: left;
+		width: 80%;
+		border-left: 1px solid #CCC;
+	}
+
+	.full-page-button-container
+	{
+		width: 100%;
+		margin: 0;
+		padding: 20px 0;
+		text-align: center;
+	}
+
+	.button
+	{
+		display: inline-block;
+		opacity: 1;
+		border-radius: 3px;
+		padding: 20px 30px;
+		font-size: 20px;
+		color: #FFF;
+		background: #FF0509;
+		-webkit-transition: all 0.25s linear;
+		-moz-transition: all 0.25s linear;
+		-o-transition: all 0.25s linear;
+		transition: all 0.25s linear;
+	}
+
+	.button:hover,
+	.button:focus
+	{
+		opacity: 1;
+		color: #FFF;
+		background: #000;
+	}
+
+	.youtube-embed-container,
+	.instagram-embed-container
+	{
+		padding: 20px 0;
+	}
+
+	.youtube-embed
+	{
+		display: block;
+		width: 100%;
+		max-width: 600px;
+		height: 400px;
+		margin: 0 auto;
+	}
+
+	.instagram-embed
+	{
+		display: block;
+		width: 100%;
+		max-width: 610px;
+		height: 710px;
+		margin: 0 auto;
+	}
+
+	.buy-now-link
+	{
+		display: block;
+		padding: 40px 0 0;
+		text-align: center;
+	}
+
+/****************************************************
+* HEADER
+****************************************************/
+	.page-top-banner
+	{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		border-bottom: 2px solid #222;
+		text-align: center;
+		color: #FFF;
+		background: #599442;
+		z-index: 10000;
+	}
+
+	.page-top-banner .button
+	{
+		margin: 5px 50px;
+		padding: 5px 10px;
+		font-size: 14px;
+		line-height: 1;
+		background: #222;
+	}
+
+	.page-top-banner .button:hover,
+	.page-top-banner .button:focus
+	{
+		color: #222;
+		background: #FFF;
+	}
+
+	.logo
+	{
+		border-bottom: 1px solid #CCC;
+		padding: 10px 0;
+	}
+
+	.logo img
+	{
+		max-width: 300px;
+	}
+
+	.reviews-header-container
+	{
+		margin-bottom: 20px;
+	}
+
+	.reviews-header-link
+	{
+		display: block;
+		border-bottom: 1px solid #CCC;
+		padding: 5px 0 0;
+		text-align: center;
+	}
+
+/****************************************************
+* FOOTER
+****************************************************/
+	.fda-disclaimer-container p
+	{
+		text-align: center;
+	}
+
+	.footer-image
+	{
+		max-width: 300px;
+	}
+
+/****************************************************
+* NAVIGATION
+****************************************************/
+	.sidebar-menu-item
+	{
+		display: block;
+		padding: 5px 10px;
+		color: #000;
+		-webkit-transition: all 0.25s linear;
+		-moz-transition: all 0.25s linear;
+		-o-transition: all 0.25s linear;
+		transition: all 0.25s linear;
+	}
+
+	.sidebar-menu-item:hover,
+	.sidebar-menu-item:focus
+	{
+		opacity: 1;
+		color: #FFF;
+		background: #599442;
+	}
+
+	.mobile-menu-container
+	{
+		display: none;
+		text-align: center;
+	}
+
+	.mobile-menu-trigger
+	{
+		display: inline-block;
+		padding: 10px;
+		font-size: 20px;
+		color: #FFF;
+		background: #599442;
+	}
+
+	.mobile-menu-trigger:hover,
+	.mobile-menu-trigger:focus,
+	.mobile-menu-trigger:active
+	{
+		color: #FFF;
+	}
+
+	.mobile-menu
+	{
+		display: none;
+		width: 50%;
+		margin: 0 auto;
+	}
+
+	.mobile-menu .sidebar-menu-item
+	{
+		font-size: 18px;
+		color: #FFF;
+		background: #599442;
+		border: none;
+	}
+
+/****************************************************
+* PRODUCTS
+****************************************************/
+	#product > .row
+	{
+		border-bottom: 1px solid #CCC;
+		padding-bottom: 20px;
+	}
+
+	.product.span4 .image
+	{
+		max-width: 200px;
+	}
+
+	.fit-tea-features-list
+	{
+		margin-left: 0;
+	}
+
+	.fit-tea-features-list-item
+	{
+		list-style-type: none;
+		font-weight: 700;
+		color: #599442;
+	}
+
+	.fit-tea-features-list-item:before
+	{
+		content: '\f06c';
+		vertical-align: middle;
+		margin-right: 10px;
+		font-family: FontAwesome;
+		font-size: 16px;
+		color: #599442;
+	}
+
+	#add-item-form > .product-options
+	{
+		border: none;
+	}
+
+	.product:hover img
+	{
+		opacity: 1;
+	}
+
+	.product-link
+	{
+		border: 3px solid transparent;
+		-webkit-transition: all 0.25s linear;
+		-moz-transition: all 0.25s linear;
+		-o-transition: all 0.25s linear;
+		transition: all 0.25s linear;
+	}
+
+	.product-link:hover,
+	.product-link:focus
+	{
+		border-color: #000;
+	}
+
+	/****************************************************
+	* GARCINIA CAMBOGIA
+	****************************************************/
+		.garcinia-cambogia h2
+		{
+			font-size: 20px;
+			color: #599442;
+		}
+
+/****************************************************
+* PAGES
+****************************************************/
+	.page-title
+	{
+		margin: 0 !important;
+		padding: 0px 0 10px;
+		font-size: 24px;
+		line-height: 1;
+		font-weight: 700;
+		color: #599442;
+	}
+
+	.page-title-top-padding
+	{
+		margin: 0 !important;
+		padding: 10px 0;
+		font-size: 24px;
+		line-height: 1;
+		font-weight: 700;
+		color: #599442;
+	}
+
+	.block-as-seen-on-container
+	{
+		text-align: center;
+	}
+
+	.block-as-seen-on-container img
+	{
+		display: inline-block;
+	}
+
+	.sales-block-image
+	{
+		display: block;
+		padding: 40px;
+		margin: 0 auto;
+	}
+
+	.block-sales-1-container h2,
+	.block-sales-2-container h2
+	{
+		margin-bottom: 20px;
+		font-size: 24px;
+		line-height: 1.5;
+		text-align: center;
+	}
+
+	.block-sales-2-container ul
+	{
+		margin-left: 0;
+	}
+
+	.block-sales-2-container li
+	{
+		margin-bottom: 30px;
+		list-style-type: none;
+		font-size: 18px;
+		line-height: 1.5;
+	}
+
+	.block-sales-2-container li strong
+	{
+		display: inline-block;
+		margin-bottom: 20px;
+		color: #599442;
+	}
+
+	.block-sales-2-container li:before
+	{
+		content: '\f06c';
+		vertical-align: middle;
+		margin-right: 10px;
+		font-family: FontAwesome;
+		font-size: 18px;
+		color: #599442;
+	}
+
+	.block-tea-product-description-container h3
+	{
+		font-size: 22px;
+		text-align: center;
+		color: #599442;
+	}
+
+	/****************************************************
+	* HOME
+	****************************************************/
+		.home-product-block
+		{
+			margin: 20px 0;
+			border: 1px solid #CCC;
+			border-left: none;
+			border-right: none;
+			padding: 20px 0 10px;
+		}
+
+		.home-product-block h2
+		{
+			margin-bottom: 0;
+		}
+
+		.home-product-block .button
+		{
+			margin-top: 20px;
+			padding: 10px;
+		}
+
+		.home-product-block-image-container img
+		{
+			width: 100%;
+		}
+
+		.home-product-block .button.learn-more-button
+		{
+			margin-top: 0;
+			font-size: 16px;
+			line-height: 1;
+			background: #222;
+		}
+
+		.learn-more-button:hover,
+		.learn-more-button:focus
+		{
+			background: #FF0509;
+		}
+
+		.home-slider
+		{
+			height: 295px;
+		}
+
+		.home-slider .flex-direction-nav li a
+		{
+			-webkit-transition: background-image 0.25s linear;
+			-moz-transition: background-image 0.25s linear;
+			-o-transition: background-image 0.25s linear;
+			transition: background-image 0.25s linear;
+		}
+
+	/****************************************************
+	* VIDEO REVIEWS
+	****************************************************/
+		.article h1 a
+		{
+			-webkit-transition: all 0.25s linear;
+			-moz-transition: all 0.25s linear;
+			-o-transition: all 0.25s linear;
+			transition: all 0.25s linear;
+		}
+
+		.article h1 a:hover,
+		.article h1 a:focus
+		{
+			color: #000;
+		}
+
+		.video-review-buttons-container
+		{
+			margin: 20px 0;
+		}
+
+		.video-review-button
+		{
+			display: block;
+			opacity: 1;
+			padding: 10px 20px;
+			color: #FFF;
+			background: #599442;
+			-webkit-transition: all 0.25s linear;
+			-moz-transition: all 0.25s linear;
+			-o-transition: all 0.25s linear;
+			transition: all 0.25s linear;
+		}
+
+		.video-review-button:hover,
+		.video-review-button:focus
+		{
+			opacity: 1;
+			color: #FFF;
+			background: #000;
+		}
+
+		.video-review-button-previous
+		{
+			float: left;
+		}
+
+		.video-review-button-next
+		{
+			float: right;
+		}
+
+		.pagination li a
+		{
+			-webkit-transition: all 0.25s linear;
+			-moz-transition: all 0.25s linear;
+			-o-transition: all 0.25s linear;
+			transition: all 0.25s linear;
+		}
+
+		.pagination li a:hover,
+		.pagination li a:focus
+		{
+			background: #000;
+		}
+
+	/****************************************************
+	* TESTIMONIALS
+	****************************************************/
+		.testimonial-container
+		{
+			border: 3px solid #599442;
+			margin-bottom: 20px;
+		}
+
+		.testimonial-container blockquote
+		{
+			margin-bottom: 0;
+			font-size: 16px;
+			color: #000;
+			background: #FFF;
+		}
+
+		.testimonial-credit
+		{
+			margin-bottom: 0;
+			padding: 0 20px 20px;
+			font-size: 20px;
+			font-weight: 700;
+			text-align: right;
+			color: #000;
+		}
+
+	/****************************************************
+	* SHOP
+	****************************************************/
+		.shop-page .page-title
+		{
+			padding-bottom: 20px;
+		}
+
+		.shop-page .product .title
+		{
+			font-size: 22px;
+		}
+
+		.buy-now-link-container
+		{
+			text-align: center;
+		}
+
+		.buy-now-link-container .buy-now-link
+		{
+			padding: 20px 30px;
+		}
+
+	/****************************************************
+	* FAQ
+	****************************************************/
+		.faq-topics-list
+		{
+			margin-bottom: 30px;
+		}
+
+		.faq-container
+		{
+			margin-left: 30px;
+		}
+
+		.faq-topic-title
+		{
+			padding-top: 40px;
+		}
+
+		.faq-item-container
+		{
+			font-size: 20px;
+			font-weight: 700;
+			color: #599442;
+		}
+
+		.faq-item-question
+		{
+			color: #599442;
+		}
+
+		.faq-item-answer
+		{
+			font-size: 16px;
+			font-weight: 400;
+			color: #555;
+		}
+
+	/****************************************************
+	* CONTACT US
+	****************************************************/
+		.contact-us-email-link-container
+		{
+			padding: 20px 0;
+			text-align: center;
+		}
+
+		.contact-us-email-link-container > a
+		{
+			font-size: 36px;
+		}
+
+		.contact-us-info-list
+		{
+			margin-bottom: 30px;
+		}
+
+	/****************************************************
+	* WIN
+	****************************************************/
+		.contest-form
+		{
+			margin-bottom: 20px;
+		}
+
+		.contest-form tr td
+		{
+			border: none;
+		}
+
+		.contest-form-inputs-row .contest-form-inputs-cell-email
+		{
+			width: 70%;
+		}
+
+		.contest-form-inputs-row .contest-form-inputs-cell-email input
+		{
+			display: block;
+			width: 100%;
+			height: 34px;
+		}
+
+		.contest-form-inputs-row .contest-form-inputs-cell-submit
+		{
+			width: 30%;
+		}
+
+		.contest-form .button
+		{
+			height: auto;
+			border: none;
+			padding: 10px 30px;
+			font-size: 16px;
+		}
